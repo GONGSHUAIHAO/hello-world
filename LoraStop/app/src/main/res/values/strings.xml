@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LoraStop</string>
+    <string name="btn_nav">开始导航</string>
+</resources>

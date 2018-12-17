@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mMapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/color_write"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:hint="你要去哪儿"
+                android:id="@+id/searchkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.88"
+                 />
+        </LinearLayout>
+
+        <ImageView
+            android:paddingLeft="320dp"
+            android:id="@+id/img_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/ic_launcher_round" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_mark"
+        android:background="@color/color_write"
+        android:padding="10dp"
+        android:layout_marginTop="490dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总车位数:" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余车位:" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:paddingRight="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100" />
+
+        <Button
+            android:id="@+id/bt_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导航" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ExpandableListView
+            android:id="@+id/exlist_lol"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:childDivider="#E02D2F" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
